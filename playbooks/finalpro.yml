@@ -1,0 +1,14 @@
+---
+ - hosts: localhost        #this is target section
+   tasks:
+    - name: installing httpd softwsre
+      yum:
+       name: httpd
+       state: present
+
+
+
+
+     - name: printing msg
+       debug:
+       msg: "hello world how are you?"

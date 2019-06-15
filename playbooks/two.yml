@@ -1,0 +1,7 @@
+---
+ - hosts: a
+   remote_user:ec2-user        #this is target section
+   tasks:
+    - command: whoami
+    - shell: cal
+    - yum: name=httpd state=present
